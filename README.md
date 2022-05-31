@@ -1,2 +1,2 @@
 # read-books
-Read thousands books on Project Gutenberg, written in React.
+Read thousands of books, on Project Gutenberg, app written in React.
