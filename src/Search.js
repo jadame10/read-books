@@ -52,7 +52,7 @@ return (
             onChange={(e) => handleChange(e)}
             className ='inpt0'
           />
-        <button onClick={(e) => allSearch(e)} disabled={isLoading}>Search by book title</button>
+        <button onClick={(e) => allSearch(e)} disabled={isLoading}>Search book by phrase</button>
     </div>
    
     <h1>Search results : {count}</h1>
