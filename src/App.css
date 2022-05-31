@@ -1,38 +1,138 @@
-.App {
+*{
+  box-sizing: border-box;
+}
+table, h1{
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.data{
+  margin: 0 auto;
+  width: 250px;
+  display: block;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+table{
+  width: 90%;
+  margin: 0 auto;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+table td, th{
+  height: 70px;
+  min-width: 70px;
+}
+table th{
+  font-size: 19px;
+  font-style: italic;
+}
+table tr:nth-last-of-type(even){
+background-color: blanchedalmond;
+}
+table tr:nth-last-of-type(odd){
+  background-color: rgb(240, 189, 113);
+ }
+ table a:link, table a:visited{
+   color:rgb(38, 125, 240);
+   text-decoration: none;
+   font-weight: 600;
+ }
+ .inpt1{
+   width: 53%;
+   margin: 5% auto;
+ }
+ .inpt0{
+   margin: 0 auto;
+   width: 50%;
+   height: 30px;
+   font-weight: 300;
+   font-size: 17px;
+ }
+ .inpt1 button{
+   min-width: 250px;
+   background-color: rgb(38, 125, 240);
+   border: 0;
+   cursor: pointer;
+   color: aliceblue;
+   height: 30px;
+   font-weight: 600;
+   font-size: 17px;
+ }
+.pagination{
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  list-style: none;
+  margin: 5% auto;
+  width: 45%;
+}
+.pagination li{
+padding: 10px;
+  border: 1px solid #dcdcdc;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.disabled{
+  cursor: not-allowed;
+}
+.active{
+background-color: rgb(38, 125, 240);
+border: 2px solid rgb(56, 61, 56);
+color: whitesmoke;
+  font-weight: bold;
+}
+.previous{
+  background-color: rgb(38, 125, 240);
+  padding: 10px;
+  border-radius: 6px;
+  color: whitesmoke;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.break{
+  padding: 10px;
+}
+.next{
+  background-color: rgb(38, 125, 240);
+  padding: 10px;
+  border-radius: 6px;
+  color: whitesmoke;
+  margin-right: 10px;
+  cursor: pointer;
+  font-weight: 600;
+}
+.list{
+  list-style-type: none;
+}
+.filter{
+  width: 12%;
+  margin: 0 auto 3% auto;
+}
+.filter select{
+  font-size: 18px;
+  font-weight: 600;
+  width: 300px;
+  height: 50px;
 }
 
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
+@keyframes spinner {
+  0% {
     transform: rotate(0deg);
   }
-  to {
+  100% {
     transform: rotate(360deg);
   }
+}
+.loading-spinner {
+  width: 50px;
+  height: 50px;
+  border: 10px solid #f3f3f3; 
+  border-top: 10px solid #1418f5;
+  border-radius: 50%;
+  animation: spinner 1.5s linear infinite;
+}
+.spinner-container {
+  position: absolute;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  top: 33%;
+  height: 350px;
+  width: 100px;
 }
